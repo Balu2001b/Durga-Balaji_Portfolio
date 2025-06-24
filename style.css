@@ -703,6 +703,10 @@ label{
 }
 
 
+.hamburger,.nav-menu{
+    display: none;
+
+}
 
 
 /*-----------------------------Media Responsive adjustment section here---------------------------------------*/
@@ -714,8 +718,115 @@ label{
     html{
 
     scroll-behavior: smooth;
+    
 }
 
+body{
+
+    overflow-x: hidden;
+}
+
+
+
+/* Hamburger button (top-right corner) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Slide-down Menu */
+.nav-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 60px 20px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1999;
+  animation: slideDown 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-menu ul li {
+  margin: 20px 0;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #0073ff;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  color: #0051b3;
+}
+
+/* Close button inside menu */
+.nav-menu button {
+  position: absolute;
+  top: 20px;
+  right: 55px;
+  border-radius: 50%;
+  padding: 7px;
+ font-size: 15px;
+  background: none;
+  border: 1px solid #0051b3;
+  color: red;
+  cursor: pointer;
+}
+
+.nav-menu button:hover{
+
+    background-color: #0073ff;
+    color: white;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Show hamburger and nav on mobile */
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+}
 
     .container{
 
@@ -723,6 +834,8 @@ label{
         height: auto;
         padding: 0;
         margin: 0;
+        
+       
     }
 
 
@@ -918,7 +1031,7 @@ label{
 .web,.ui-ux,.digital{
 
     border: 1px solid white;
-    height: 200px;
+    height: 220px;
     width: 150px;
     margin-left: 10px;
     border-radius: 8px;
@@ -1041,13 +1154,15 @@ label{
 
         font-size: 12px;
         margin-left: 10px;
-        width: 380px;
+        width: 350px;
+        overflow-x: hidden;
     }
 
     .qualification{
 
         margin-left: 10px;
         height: 230px;
+        overflow-x: hidden;
     }
     .qualification h2{
 
