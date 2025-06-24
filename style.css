@@ -739,6 +739,9 @@ label{
         display: none;
     }
 
+
+    /*-----------------------------Naming section here-----------------------------------------------*/
+
     .portfolio-naming img{
 
         top: 80px;
@@ -779,6 +782,10 @@ label{
         margin-top: -10px;
         font-size: 10px;
     }
+    .talk{
+
+        display: none;
+    }
 
     .social-media-icons h1 {
         font-size: 12px;
@@ -808,7 +815,219 @@ label{
   color: #0051b3;
 }
 
-  
+
+/*-----------------------------skills section here--------------------------------------------*/
+
+
+
+.portfolio-skills h1{
+
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    letter-spacing: 3px;
+}
+
+
+
+.skills-containers{
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    
+}
+
+
+
+.frontend ,.backend, .tools, .deployment{
+
+    border: 1px solid white;
+    height: 175px;
+    width: 250px;
+    margin-left: 10px;
+    border-radius: 8px;
+    margin-top: -45px;
+    cursor: pointer;
+    margin-bottom: 60px;
+   
+    
+    
+
+}
+
+.frontend h2, .backend h2, .tools h2, .deployment h2{
+
+    color: #0073ff;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+}
+
+.frontend p, .backend p, .tools p, .deployment p{
+
+    color: white;
+    font-size: 11px;
+    margin-left: 5px;
+    margin-top: -10px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.frontend img, .backend img, .tools img, .deployment img{
+
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+
+}
+
+
+.frontend:hover,.backend:hover,.tools:hover,.deployment:hover{
+
+    border: 1px solid #0073ff;
+    box-shadow: 5px 10px 15px black;
+    transform: translateY(-8px);
+    transition: all 0.5s;
+    
+}
+
+/*------------------------------------services section here-------------------------------------- */
+
+
+.services h1{
+
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+}
+
+
+
+.services-container{
+
+    display: grid;
+    grid-template-columns: repeat(2,190px);
+    justify-items: center;
+}
+
+
+.web,.ui-ux,.digital{
+
+    border: 1px solid white;
+    height: 200px;
+    width: 150px;
+    margin-left: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 60px;
+   
+    
+}
+.digital{
+
+    margin-top: -35px;
+}
+
+.web img,.ui-ux img,.digital img{
+
+    height: 30px;
+    width: 30px;
+   margin-left: 60px;
+}
+
+.web h2,.ui-ux h2,.digital h2{
+
+    color: #0073ff;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+
+}
+
+.web p,.ui-ux p,.digital p{
+
+    color: white;
+    font-size: 11px;
+    margin-left: 5px;
+    margin-top: -10px;
+    width: auto;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*---------------------projects section here-------------------------------------------------- */
+
+.projects-section h2{
+
+    font-size: 22px;
+    margin-top: -50px;
+    letter-spacing: 2px;
+}
+
+.project-card{
+
+    height: 150px;
+}
+
+  .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
+}
+
+.project-card img {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 15px;
+  object-fit: fill;
+}
+
+
+.project-links {
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+/* Show buttons on hover */
+.project-card:hover .project-links {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.live-btn {
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+
+.live-btn:hover {
+  background-color: #49719c;
+}
 
  
 
