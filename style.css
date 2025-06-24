@@ -1,0 +1,698 @@
+body{
+
+    background-color: #0d1b2a;
+}
+
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+.portfolio-container{
+
+    
+    height: 60px;
+    width: 100%;
+   
+    
+}
+
+.portfolio-container h1{
+
+    margin-top: -4px;
+}
+
+.portfolio-container h1 a{
+
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 120px;
+
+
+}
+
+.portfolio-container ul{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    
+}
+
+.portfolio-container ul li{
+
+    list-style-type: none;
+    margin-left: 40px;
+    
+}
+.portfolio-container ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px;
+   
+   
+}
+
+.portfolio-container ul li a:hover{
+
+    color: #0073ff;
+    transition: all 0.5s;
+    
+    
+   
+    
+    
+}
+
+.portfolio-container ul li:hover{
+
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+
+
+.portfolio-naming{
+
+    margin-top: 140px;
+
+    
+}
+
+
+.portfolio-naming h1{
+
+    color: white;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    margin-left: 680px;
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.portfolio-naming h2{
+
+    font-size: 20px;
+    color: #0073ff;
+    margin-left: 680px;
+    margin-top: -10px;
+    letter-spacing: 0.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.portfolio-naming img {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    height: 400px;
+    width: 400px;
+    object-fit: fill;
+    border-radius:50%; /* Circular shape */
+    box-shadow: 0 10px 25px rgba(0, 115, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.portfolio-naming img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 115, 255, 0.5);
+}
+
+.portfolio-naming p{
+
+    color: white;
+    font-size: 15px;
+    font-weight: 350;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 560px;
+    height: 100px;
+    margin-left: 680px;
+}
+
+.cv{
+
+    margin-left: 680px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #0073ff;
+    background: none;
+    color: #0073ff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+.talk{
+
+    margin-left: 60px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #0073ff;
+    background: none;
+    color: #0073ff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.cv:hover, .talk:hover{
+
+    background-color: #0073ff;
+    color: black;
+    transition: ease-in .5s;
+    
+}
+         
+
+                   
+.social-media-icons h1{
+    
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-top: 60px;
+    
+}
+
+.social-media{
+
+    position: absolute;
+    right: 450px;
+    margin-top: 15px;
+    
+}
+
+.social-media a{
+
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 6px;
+    color: #0073ff;
+    border: 1px solid #0073ff;
+    margin-right: 20px;
+}
+
+
+.social-media-icons a:hover{
+
+    background-color: #0073ff;
+    color: black;
+    transition: ease .5s;
+}
+
+/*------------------------------skills styling section here---------------------------------*/
+
+.skills-containers{
+
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    
+}
+
+
+.portfolio-skills h1{
+
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 95px;
+   
+}
+
+
+.frontend ,.backend, .tools, .deployment{
+
+    border: 1px solid white;
+    height: 250px;
+    width: 250px;
+    margin-left: 120px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 60px;
+   
+    
+    
+
+}
+
+.frontend h2, .backend h2, .tools h2, .deployment h2{
+
+    color: #0073ff;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.frontend p, .backend p, .tools p, .deployment p{
+
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.frontend img, .backend img, .tools img, .deployment img{
+
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 10px;
+
+}
+
+
+.frontend:hover,.backend:hover,.tools:hover,.deployment:hover{
+
+    border: 1px solid #0073ff;
+    box-shadow: 5px 10px 15px black;
+    transform: translateY(-8px);
+    transition: all 0.5s;
+    
+}
+
+
+/*------------------------------------services styling section here-----------------------------------------------*/
+
+
+.services h1{
+
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+
+
+
+.services-container{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.web,.ui-ux,.digital{
+
+    border: 1px solid white;
+    height: 250px;
+    width: 250px;
+    margin-left: 120px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    box-shadow: 5px 10px 15px black;
+    
+}
+
+
+.web img,.ui-ux img,.digital img{
+
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.web h2,.ui-ux h2,.digital h2{
+
+    font-size: 16px;
+    color: #0073ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+.web p,.ui-ux p,.digital p{
+
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------------projects styling section here-----------------------------------------------*/
+
+
+.projects-section {
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects-section h2{
+
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-card {
+  position: relative;
+  left: 50px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 200px;
+  width: 250px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
+}
+
+.project-card img {
+  height: 200px;
+  width: 250px;
+  margin-bottom: 15px;
+  object-fit: fill;
+}
+
+.project-card h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.project-links {
+  position: absolute;
+  top: 140px;
+  left: 90px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+/* Show buttons on hover */
+.project-card:hover .project-links {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.live-btn {
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+
+
+.live-btn:hover {
+  background-color: #49719c;
+}
+
+
+/*--------------------------------About styling section here-----------------------------------------*/
+
+.about h1{
+
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.about p{
+
+   width: 85%;
+    margin-left: 120px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*-------------------------Qualification styling section here-----------------------------------------*/
+
+
+.qualification{
+
+    height: 300px;
+    width: 85%;
+    border: 1px solid white;
+    margin-left: 120px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px black;
+}
+
+.qualification h2{
+
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0073ff;
+    margin-left: 100px;
+
+}
+
+.btech h3,.diploma h3,.ssc h3{
+
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0073ff;
+    margin-left: 20px;
+}
+
+.btech h4,.diploma h4,.ssc h4{
+
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.btech h5,.diploma h5,.ssc h5{
+
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.about-me{
+
+    
+    margin-top: -250px;
+    margin-left: 800px;
+    
+
+}
+
+.about-me h1{
+
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0073ff;
+}
+
+.about-me h2{
+
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0073ff;     
+
+}
+
+.about-me h3{
+
+     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0073ff;
+
+}
+.about-me span{
+
+    color: white;
+}
+
+.interests ul{
+
+    display: flex;
+    
+}
+.interests p{
+
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0073ff;
+    display: flex;
+    
+    
+}
+
+.interests ul li{
+    
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 40px;
+    
+}
+
+
+/*----------------------------------contact us styling section here-------------------------------------*/
+
+form h1{
+
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+   
+}
+
+.contact{
+
+    margin-left: 450px;
+    border: 1px solid white;
+    height: 300px;
+    width: 450px;
+    padding: 10px;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 10px;
+     margin-bottom: 100px;
+}
+label{
+
+      font-size: 14px;
+      display: grid;
+      padding: 10px;
+      color: #0073ff;
+      font-size: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    input{
+
+      width: 90%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    textarea{
+
+      width: 90%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button{
+
+      padding: 10px 170px;
+      margin-top: 20px;
+      margin-left: 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #0073ff;
+      color: white;
+      cursor: pointer;
+    
+    }
+
+    button:hover{
+
+        background-color: #556d86;
+        transition: all 0.5s;
+        
+    }
+
+/*-----------------------social media down side styling section here-------------------------------------*/
+
+
+.social-media-downside{
+
+    position: absolute;
+    right: 550px;
+    margin-top: -35px;
+    
+   
+    
+}
+
+.social-media-downside a{
+
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 6px;
+    color: #0073ff;
+    border: 1px solid #0073ff;
+    margin-right: 20px;
+}
+
+
+.social-media-downside a:hover{
+
+    background-color: #0073ff;
+    color: black;
+    transition: ease .5s;
+}
+
+
+/*-----------------------------copy rights styling section here--------------------------*/
+
+.copyrights{
+
+    position: relative;
+    bottom: 0;
+    
+}
+
+.copyrights p{
+
+    padding: 10px;
+    text-align: center;
+    background-color: #ccc;
+}
