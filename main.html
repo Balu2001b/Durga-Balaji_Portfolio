@@ -22,10 +22,21 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 
 </head>
 <body>
     <div class="container">
+
+       
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">
+  <i class="bi bi-arrow-up-short"></i>
+</button>
+
+
+
 
   <!------------------------Heading section here------------------------------------------------->
   
@@ -56,16 +67,16 @@
                  <img src="./profile_pic.png" alt="" data-aos="zoom-in">
 
                  <span >
-                    <button class="cv" data-aos="fade-left">Download CV <i class="bi bi-download" ></i></button>
-                    <button class="talk" data-aos="fade-left">Let's Talk</button>
+                    <a href="./Balaji_Resume_Software.pdf" target="_blank"><button class="cv" data-aos="fade-left" >Download CV <i class="bi bi-download" ></i></button></a>
+                    
                  </span>
 
   <!--------------------------Social Media Icons section here------------------------------------>
   
   
                  <div class="social-media-icons">
-                    <h1 data-aos="fade-up">Follow us</h1>
-                    <div class="social-media" >
+                    <h1 data-aos="fade-left">Follow us</h1>
+                    <div class="social-media" data-aos="fade-right">
                       <a href="" ><i class="bi bi-instagram"></i></a>
                     <a href=""><i class="bi bi-twitter-x"></i></a>
                     <a href=""><i class="bi bi-linkedin"></i></a>
@@ -94,61 +105,81 @@
 
             <!-------------------------Frontend section here-------------------------->
 
-                            <div class="frontend" data-aos="zoom-in">
+                            <div class="frontend" data-aos="zoom-in" title="Frontend">
                             <h2>Frontend</h2>
                             <p>Skilled in crafting responsive and interactive web interfaces using HTML, CSS, 
                                 JavaScript, and modern libraries like React. Proficient in version control with 
                                 Git, UI frameworks like Bootstrap and Tailwind CSS, and focused on delivering clean, 
-                                user-friendly designs optimized for performance and accessibility.</p>
-
-                                <img src="./html.svg" alt="">
+                                user-friendly designs optimized for performance and accessibility. <br><br>
+                              
+                               <img src="./html.svg" alt="">
                                 <img src="./css-alt.svg" alt="">
                                 <img src="./javascript.svg" alt="">
+                              
+                              </p>
+
+                               
 
                         </div>
 
             <!-------------------------Backend section here-------------------------->
 
-                        <div class="backend" data-aos="zoom-in">
+                        <div class="backend" data-aos="zoom-in" title="Backend">
                             <h2>Backend</h2>
                             <p>Experienced in building server-side applications using Node.js and Express.js,
                                  with a solid understanding of RESTful APIs and database management using MongoDB 
                                  and MySQL. Skilled in handling data operations, authentication, and deploying backend 
-                                 services for scalable web applications.</p>
-
-                                 <img src="./node-js.svg" alt="">
+                                 services for scalable web applications. <br><br>
+                                
+                                <img src="./node-js.svg" alt="">
                                  <img src="./mongodb.svg" alt="">
                                  <img src="./mysql.svg" alt="">
+                                
+                                
+                                </p>
+
+                                 
 
                                  
                         </div>
                         
             <!-------------------------Tools section here-------------------------->
-                        <div class="tools" data-aos="zoom-in">
+                        <div class="tools" data-aos="zoom-in" title="Tools">
                             <h2>Tools</h2>
                             <p>Proficient with development tools like VS Code, Git, and GitHub for 
                                 efficient coding and version control. Experienced in using Chrome DevTools 
                                 for debugging and Postman for API testing, ensuring smooth development and 
-                                collaboration workflows.</p>
-
+                                collaboration workflows. <br><br>
+                              
                                 <img src="./vscode.svg" alt="">
                                 <img src="./github-logo.svg" alt="">
+                              
+                              </p>
+
+                                
                         </div>
 
 
             <!--------------------------deployment tools section here-------------------------------->
             
-                        <div class="deployment" data-aos="zoom-in">
+                        <div class="deployment" data-aos="zoom-in" title="Deployment">
                             <h2>Deployment</h2>
                             <p>Proficient with development tools like VS Code, Git, and GitHub for efficient
                                  coding and version control. Skilled in using Chrome DevTools for debugging,
                                   Postman for API testing. Experienced 
                                   with deployment platforms like Netlify, Vercel, and GitHub Pages for hosting 
-                                  responsive and production-ready web applications.</p>
+                                  responsive and production-ready web applications. <br><br>
+
 
                                   <img src="./github-logo.svg" alt="">
                                   <img src="./netlify.svg" alt="">
                                   <img src="./vercel.svg" alt="">
+                                
+                                
+                                
+                                </p>
+
+                                  
                         </div>
             
                         
@@ -163,7 +194,7 @@
 
                 <div class="services-container">  
                 <!------------web development------------------>
-                    <div class="web" data-aos="fade-down">
+                    <div class="web" data-aos="fade-down" title="Web Development">
                         <img src="./web.svg" alt="">
                         <h2>Web Development</h2>
                         <p>I specialize in building responsive, clean, and user-friendly websites using HTML, CSS, and JavaScript.
@@ -171,7 +202,7 @@
                     </div>
 
                 <!---------------ui/ux designer----------------->
-                    <div class="ui-ux" data-aos="fade-down">
+                    <div class="ui-ux" data-aos="fade-down" title="UI/UX Designer">
                         <img src="./uiux.svg" alt="">
                         <h2>UI/UX</h2>
                         <p>I design intuitive and user-centered interfaces that combine aesthetics with functionality.
@@ -181,7 +212,7 @@
 
                 <!--------------------Digital Marketing------------------>
 
-                <div class="digital" data-aos="fade-down">
+                <div class="digital" data-aos="fade-down" title="Digital Marketing">
                     <img src="./marketing.svg" alt="">
                     <h2>Digital Marketing</h2>
                     <p>I help brands grow online through strategic digital marketing, including SEO, social media,
@@ -198,7 +229,7 @@
   <h2 data-aos="fade-down" id="projects"> My Projects</h2>
   <div class="projects-grid">
 
-    <div class="project-card" data-aos="zoom-in">
+    <div class="project-card" data-aos="zoom-in" title="Ecommerce Shopping website">
       <img src="./SHOPPING_WEBSITE.jpeg" alt="Portfolio">
       
       <div class="project-links">
@@ -210,7 +241,7 @@
     </div>
 
 
-    <div class="project-card" data-aos="zoom-in">
+    <div class="project-card" data-aos="zoom-in" title="Banking Application">
       <img src="./banking.jpeg" alt="Portfolio">
       
       <div class="project-links">
@@ -220,7 +251,7 @@
     </div>
 
 
-    <div class="project-card" data-aos="zoom-in">
+    <div class="project-card" data-aos="zoom-in" title="Interior Design">
       <img src="./interior_design.jpeg" alt="Portfolio">
       
       <div class="project-links">
@@ -336,6 +367,17 @@ As a self-motivated learner and team player, I'm always open to challenges and e
                     
 </div>
 
+
+
+
+
+
+<!---------------------------------Scripting section starts here---------------------------------------
+-------------------------------------------------------------------------------------------------------->
+
+
+<!-------------------------------AOS section here--------------------------------------------->
+
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
@@ -345,6 +387,41 @@ As a self-motivated learner and team player, I'm always open to challenges and e
   });
 </script>
 
+
+<!-----------------------------Scroll to top section here---------------------------------------->
+
+
+<script>
+   // Scroll to top button logic
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollTopBtn.style.display = "block";
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  };
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+<!-----------------------------Download Pdf section here---------------------------------------------->
+
+
+
+
+<script>
+  function downloadCV() {
+    const element = document.getElementById('cv-section');
+    html2pdf().from(element).save('Balaji_Resume_Software.pdf');
+  }
+</script>
 
 
 </body>
