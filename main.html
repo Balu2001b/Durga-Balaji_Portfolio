@@ -29,11 +29,33 @@
 <body>
     <div class="container">
 
+
        
 <!-- Scroll to Top Button -->
 <button id="scrollTopBtn" title="Go to top">
   <i class="bi bi-arrow-up-short"></i>
 </button>
+
+<!-- Hamburger Button -->
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Navigation Menu -->
+<div class="nav-menu" id="navMenu">
+  <button class="close-btn" id="closeMenu">&times;</button>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
 
 
 
@@ -41,10 +63,12 @@
   <!------------------------Heading section here------------------------------------------------->
   
   
-        <div class="portfolio-container" data-aos="fade-down">
-            <h1><a href="">Durga Balaji.</a></h1>
+        <div class="portfolio-container" data-aos="fade-down" id="home">
+            <h1><a href="">Portfolio.</a></h1>
+            
+      
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -422,6 +446,41 @@ As a self-motivated learner and team player, I'm always open to challenges and e
     html2pdf().from(element).save('Balaji_Resume_Software.pdf');
   }
 </script>
+
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.add("active");
+    
+    
+  });
+
+  closeBtn.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    
+    
+  });
+
+  // Smooth scroll on link click
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href").slice(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+        navMenu.classList.remove("active"); // Close menu after click
+       
+      }
+    });
+  });
+</script>
+
 
 
 </body>
