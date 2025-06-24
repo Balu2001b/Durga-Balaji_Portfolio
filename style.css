@@ -246,8 +246,10 @@ html{
     color: white;
     letter-spacing: 2px;
     margin-top: 95px;
+    
    
 }
+
 
 
 .frontend ,.backend, .tools, .deployment{
@@ -707,6 +709,12 @@ label{
 
 
 @media only screen and (max-width: 390px){
+
+
+    html{
+
+    scroll-behavior: smooth;
+}
 
 
     .container{
