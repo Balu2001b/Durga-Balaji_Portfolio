@@ -35,6 +35,10 @@ html{
   transform: scale(1.1);
 }
 
+body{
+
+  overflow-x: hidden;
+}
 
 
 
@@ -290,6 +294,9 @@ html{
     width: 30px;
     margin-right: 5px;
     margin-left: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
 
 }
 
@@ -346,6 +353,9 @@ html{
     width: 50px;
     margin-left: 100px;
     margin-top: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .web h2,.ui-ux h2,.digital h2{
